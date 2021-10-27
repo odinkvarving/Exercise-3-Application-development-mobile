@@ -1,18 +1,10 @@
 package com.example.registration
 
-import android.app.AlertDialog
-import android.app.Dialog
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
-import android.view.Window
 import android.widget.*
-import java.text.SimpleDateFormat
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -72,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         val selected_birthday = findViewById<TextView>(R.id.beskrivelse).text.toString()
         edit_button.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View) {
+                // CustomDialogClass(this).show() ---- Not implemented - problems with fetching data from main-context (Spinner and TextView)
                 val intent = Intent("com.example.registration.EditFriend")
                 intent.putExtra("friends_list", venner)
                 intent.putExtra("birthdays_list", bursdager)
@@ -99,6 +92,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /* NOT IMPLEMENTED INNER CLASS (might be nice for future projects if solution found!)
     inner class CustomDialogClass(context: Context) : android.app.Dialog(context) {
 
         lateinit var selected_friend: String
@@ -158,4 +152,6 @@ class MainActivity : AppCompatActivity() {
             return formated_date
         }
     }
+
+     */
 }
