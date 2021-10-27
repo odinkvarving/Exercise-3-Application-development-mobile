@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Registration</string>
+    <string name="register_new_friend">Register new friend</string>
+    <string name="venn1">Petter Marstad</string>
+    <string name="vennb1">19-03-1997</string>
+    <string name="venn2">Mathias Rabben</string>
+    <string name="vennb2">18-03-1998</string>
+    <string name="venn3">Edvard Platou</string>
+    <string name="vennb3">15-08-1997</string>
+    <string name="avslutt_button">Avslutt</string>
+    <string name="add_friend_button">Add</string>
+    <string name="edit_information">Edit information</string>
+    <string name="name">name</string>
+
+    <string-array name="venner">
+        <item>@string/venn1</item>
+        <item>@string/venn2</item>
+        <item>@string/venn3</item>
+    </string-array>
+
+    <string-array name="bursdager">
+        <item>@string/vennb1</item>
+        <item>@string/vennb2</item>
+        <item>@string/vennb3</item>
+
+    </string-array>
+</resources>
